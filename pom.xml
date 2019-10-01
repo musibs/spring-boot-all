@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.8.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>io.codefountain.spring.boot.all.actuator</groupId>
+	<artifactId>spring-boot-all</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-boot-all</name>
+    <description>Spring Boot All</description>
+    
+    <modules>
+        <module>spring-boot-actuator</module>
+        <module>spring-boot-admin-server</module>
+        <module>spring-boot-admin-client</module>
+        <module>spring-boot-command-line-runner</module>
+        <module>spring-boot-rest-service</module>
+        <module>spring-boot-rest-service-consumer</module>
+        <module>spring-boot-task-scheduling</module>
+    </modules>
+    <packaging>pom</packaging>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

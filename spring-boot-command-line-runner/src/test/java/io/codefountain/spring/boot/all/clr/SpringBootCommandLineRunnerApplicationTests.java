@@ -1,4 +1,4 @@
-package FilterChainProxy;
+package io.codefountain.spring.boot.all.clr;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
