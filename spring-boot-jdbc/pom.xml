@@ -8,29 +8,42 @@
 		<version>2.1.8.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>io.codefountain.spring.boot.all.actuator</groupId>
-	<artifactId>spring-boot-all</artifactId>
+	<groupId>io.codefountain.spring.boot.all.jdbc</groupId>
+	<artifactId>spring-boot-jdbc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-all</name>
-    <description>Spring Boot All</description>
-    
-    <modules>
-        <module>spring-boot-actuator</module>
-        <module>spring-boot-admin-server</module>
-        <module>spring-boot-admin-client</module>
-        <module>spring-boot-command-line-runner</module>
-        <module>spring-boot-rest-service</module>
-        <module>spring-boot-rest-service-consumer</module>
-        <module>spring-boot-task-scheduling</module>
-        <module>spring-boot-jdbc</module>
-    </modules>
-    <packaging>pom</packaging>
+	<name>spring-boot-jdbc</name>
+	<description>Spring Boot JDBC</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
