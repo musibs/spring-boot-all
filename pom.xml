@@ -23,6 +23,7 @@
         <module>spring-boot-rest-service-consumer</module>
         <module>spring-boot-task-scheduling</module>
         <module>spring-boot-jdbc</module>
+		<module>spring-boot-thymeleaf</module>
     </modules>
     <packaging>pom</packaging>
 
