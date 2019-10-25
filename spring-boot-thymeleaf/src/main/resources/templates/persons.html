@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Persons</title>
+</head>
+<body>
+    <h1>Persons</h1>
+    <table>
+        <tr th:each = "person : ${persons}">
+            <td th:text="${person.firstName}"></td>
+            <td th:text="${person.lastName}"></td>
+            <td th:text="${person.age}"></td>
+            <td>
+                <span th:if="${person.gender} == 'M'" th:text="Male" />
+                <span th:if="${person.gender} == 'F'" th:text="Female" />
+            </td>
+            <td th:switch="${person.gender}">
+                <span th:case="'M'" th:text="Male" />
+                <span th:case="'F'" th:text="FeMale" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

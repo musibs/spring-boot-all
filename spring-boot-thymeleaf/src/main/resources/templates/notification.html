@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Notification List</title>
+</head>
+<body>
+<form action="#" th:action="@{/notification}" th:object="${notification}" method="post">
+    Id: <input type="text" th:field="*{notificationId}" />
+    Message: <input type="text" th:field="*{notificationMessage}" />
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
